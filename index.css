@@ -1,0 +1,167 @@
+.big-page {
+  background-color: #2A2C2F;
+  margin-top: 600px;
+}
+
+body {
+  background: #000000;
+}
+
+#background_main {
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.player {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  width: 350px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.player__content {
+  position: absolute;
+  height: 205px;
+  width: 400px;
+  background: #808080;
+  z-index: 4;
+  bottom: -17%;
+}
+
+.song-artist {
+  position: absolute;
+  z-index: 4;
+  color: #00CC00;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  bottom: 88px;
+  left: 97px;
+}
+
+.song {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  bottom: 70px;
+  left: 97px;
+}
+
+#play-pause {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  bottom: 63px;
+  z-index: 4;
+  font-size: 50px;
+  left: 30px;
+}
+
+#prev_song,
+#next_song {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  bottom: 60px;
+  font-size: 40px;
+  z-index: 4;
+}
+
+#next_song {
+  right: 10%;
+}
+
+#prev_song {
+  right: 36px;
+  bottom: 90px;
+}
+
+.progress {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: 4;
+  height: 5px;
+  background: #000000;
+  width: 270px;
+  bottom: 5%;
+  border-radius: 30px;
+  left: 30px;
+}
+
+.progress::-webkit-slider-thumb {
+  background:#00CC00;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  min-height: 134px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 92px 0 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 92.5%;
+}
+
+.footer__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  padding: 0 18px 0 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  transition-duration: 1s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.header__logo {
+  height: 52px;
+  width: 176px;
+}
+
+.footer__copyright {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: white;
+}

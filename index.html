@@ -3,39 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="pages/index.css" /> -->
     <link rel="stylesheet" href="./index.css">
 
     <title>Audio player</title>
   </head>
   
   <body class="big-page">
-    <img src="" id="background">
+    <img src="./images/cover1.png" id="background_main">
     <audio class="audio" src="./audio/Stella Maris.mp3"></audio>
     
     <div class="player">
-      <div class="box"></div>
+      <div class="player__content"></div>
       <div class="cover">
         <img class="cover__img" src="./images/cover1.png" />
       </div>
         <div class="buttons"> 
-          <div class=" btn prev"><img src="./images/prev.png" id="previous-song" /></div>
+          <div class="btn prev"><img src="./images/prev.png" id="prev_song" /></div>
           <div class=" btn play"><img class="img__src" src="./images/play.png" id="play-pause" /></div>
-          <div class=" btn next"><img src="./images/next.png" id="next-song" /></div>
+          <div class=" btn next"><img src="./images/next.png" id="next_song" /></div>
         </div>
         
-        <div class="song-artist">Beyonce</div>
-        <div class="song">Don't Hurt Yourself</div>
+        <div class="song-artist">Аквариум</div>
+        <div class="song">Губернатор</div>
         <div class="progress__container">
-          <input type="range" class="progress" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()" />
+          <input type="range" class="progress" min="0" max="" value="0" />
         </div>
-        
-        <div class="currentTime"></div>
-        <div class="durationTime"></div>
     </div>
-
-    <script src="index.js"></script>
-
 
       <footer class="footer">
         <div class="footer__columns">
