@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Audio player</title>
+  </head>
+  
+  <body class="big-page">
+    <img src="./images/cover1.png" id="background_main">
+    <audio class="audio" src="./audio/Stella Maris.mp3"></audio>
+    
+    <div class="player">
+      <div class="player__content"></div>
+      <div class="cover">
+        <img class="cover__img" src="./images/cover1.png" />
+      </div>
+        <div class="buttons"> 
+          <div class="btn prev"><img src="./images/prev.png" id="prev_song" /></div>
+          <div class="btn play"><img class="img__src" src="./images/play.png" id="play-pause" /></div>
+          <div class="btn next"><img src="./images/next.png" id="next_song" /></div>
+        </div>
+        
+        <div class="song-artist">Аквариум</div>
+        <div class="song">Губернатор</div>
+        <div class="progress__container">
+          <input type="range" class="progress" min="0" max="" value="0" />
+        </div>
+    </div>
+
+      <footer class="footer">
+        <div class="footer__columns">
+          <nav>
+            <ul class="footer__list">
+              <li class=""><a href="https://github.com/MasterrBo" class="footer__link" target="blank">Гитхаб</a></li>
+              <li class=""><a href="https://rs.school/" target="blank"><img class="header__logo" src="./images/logo-rsschool3.png" alt="Логотип" /></a></li>
+            </ul>
+          </nav>
+
+          <p class="footer__copyright">&copy; 2024. A.Shkoskikh</p>
+        </div>
+      </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
