@@ -6,12 +6,12 @@ const player = document.querySelector('.player'),
   progressContainer = document.querySelector('.progress__container'),
   progress = document.querySelector('.progress'),
   title = document.querySelector('.song'),
-  cover = document.querySelector('.cover__img'),
+  coverImg = document.querySelector('.cover__img'),
   imgSrc = document.querySelector('.img__src')
 
   //Названия песен
  
-const songs = ['gubernator', 'ne-bylo-takoi', 'lubov', 'Stella Maris']
+const songs = ['gubernator', 'ne-bylo-takoi', 'lubov-vo-vremya-voiny', 'Stella Maris']
 
 // песня по умолчанию 
 let songIndex = 0
@@ -21,10 +21,13 @@ let songIndex = 0
 function loadSong (song) {
   title.innerHTML = song
   audio.src = `audio/${song}.mp3`
-  // cover.src = `image/cover${songIndex + 1}.png`
-}
+  coverImg.src = `./images/cover${songIndex + 1}.png`
+} 
 
 loadSong(songs[songIndex])
+
+// songArtist = ['Аквариум', 'Cranberries', 'Bowie', 'SOAD']
+// let artistIndex = 0
 
 //play
 function playSong() {  
@@ -99,9 +102,7 @@ function setProgress (e) {
 
 progressContainer.addEventListener('click', setProgress)
 
-
 //autoplay
-
  audio.addEventListener('ended', nextSong)
 
   
